@@ -15,11 +15,11 @@ import javax.sound.sampled.UnsupportedAudioFileException;
  */
 public class Metodos {
 
-    public Clip clip;
+    public Clip clip ;
     public String ruta = "/voces/";
 
     public int generarNumero() {
-        int numeroAleatorio = (int) (Math.random() * 128);
+        int numeroAleatorio = (int) (Math.random() * 128+1);
         return numeroAleatorio;
     }
 
@@ -31,14 +31,14 @@ public class Metodos {
         try {
             f = new File("src/manjarprogramacion/voces.txt");
             sc = new Scanner(f);
+            
             while (sc.hasNextLine()) {
                 String res = sc.nextLine();
                 System.out.println(res);
-                String [] arrayNumeroCancion = res.split(",");
-                String [] arrayTituloCancion = res.split(".");
-                if (Integer.parseInt(arrayNumeroCancion[0]) == n) {
-                    System.out.println(arrayTituloCancion[0]);
-                    sonido(arrayTituloCancion[0]);
+                String [] arrayNumeroYNombre = res.split(",");   
+                if (Integer.parseInt(arrayNumeroYNombre[0]) == n) {
+                    System.out.println(arrayNumeroYNombre[1]);
+                    sonido(arrayNumeroYNombre[1]);
                 }
             }
         } catch (FileNotFoundException ex) {

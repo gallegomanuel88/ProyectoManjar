@@ -15,7 +15,7 @@ public class Manjarprogramacion {
 
             switch (Integer.parseInt(JOptionPane.showInputDialog("la opcion:\n\n1.) Empezar\n2.) \n3.) \n4.) \n5.) \n6.) \n7.) Salir"))) {
                 case 1:
-                    
+                    obj1.leerArchivo(obj1.generarNumero());
                     break;
                 case 2:
                     

@@ -1,129 +1,129 @@
-1, aatrox.
-2, Ahri.
-3, Akali.
-4, Alistar.
-5, Amumu.
-6, Anivia.
-7, Annie.
-8, Ashe.
-9, Azir.
-10, Bardo.
-11, Blitzcrank.
-12, Brand.
-13, Braum.
-14, Caitlyn.
-15, Cassiopeia.
-16, Cho'Gath.
-17, Corki.
-18, Darius.
-19, Diana.
-20, Dr. Mundo.
-21, Draven.
-22, Ekko.
-23, Elise.
-24, Evelynn.
-25, Ezreal.
-26, Fiddlesticks.
-27, Fiora.
-28, Fizz.
-29, Galio.
-30, Gangplank.
-31, Garen.
-32, Gnar.
-33, Gragas.
-34, Graves.
-35, Hecarim.
-36, Heimerdinger.
-37, Illaoi.
-38, Irelia.
-39, Janna.
-40, Jarvan IV.
-41, Jax.
-42, Jayce.
-43, Jhin.
-44, Jinx.
-45, Kalista.
-46, Karma.
-47, Karthus.
-48, Kassadin.
-49, Katarina.
-50, Kayle.
-51, Kennen.
-52, Kha'Zix.
-53, Kindred.
-54, Kog'Maw.
-55, LeBlanc.
-56, Lee Sin.
-57, Leona.
-58, Lissandra.
-59, Lucian.
-60, Lulu.
-61, Lux.
-62, Maestro Yi.
-63, Malphite.
-64, Malzahar.
-65, Maokai.
-66, Miss Fortune.
-67, Mordekaiser.
-68, Morgana.
-69, Nami.
-70, Nasus.
-71, Nautilus.
-72, Nidalee.
-73, Nocturne.
-74, Nunu.
-75, Olaf.
-76, Orianna.
-77, Pantheon.
-78, Poppy.
-79, Quinn.
-80, Rammus.
-81, Rek'Sai.
-82, Renekton.
-83, Rengar.
-84, Riven.
-85, Rumble.
-86, Ryze.
-87, Sejuani.
-88, Shaco.
-89, Shen.
-90, Shyvana.
-91, Singed.
-92, Sion.
-93, Sivir.
-94, Skarner.
-95, Sona.
-96, Soraka.
-97, Swain.
-98, Syndra.
-99, Tahm Kench.
-100, Talon.
-101, Taric.
-102, Teemo.
-102, Thresh.
-103, Tristana.
-104, Trundle.
-105, Tryndamere.
-106, Twisted Fate.
-107, Twitch.
-108, Udyr.
-109, Urgot.
-110, Varus.
-111, Vayne.
-112, Veigar.
-113, Vel'Koz.
-114, Vi.
-115, Viktor.
-116, Vladimir.
-117, Volibear.
-118, Warwick.
-119, Wukong.
-120, Xerath.
-121, Xin Zhao.
-122, Yasuo.
-123, Yorick.
-124, Zac.
-125, Zed.
-126, Ziggs.
-127, Zilean.
-128, Zyra.
+1,Aatrox,
+2,Ahri,
+3,Akali,
+4,Alistar,
+5,Amumu,
+6,Anivia,
+7,Annie,
+8,Ashe,
+9,Azir,
+10,Bardo,
+11,Blitzcrank,
+12,Brand,
+13,Braum,
+14,Caitlyn,
+15,Cassiopeia,
+16,Cho'Gath,
+17,Corki,
+18,Darius,
+19,Diana,
+20,Dr. Mundo,
+21,Draven,
+22,Ekko,
+23,Elise,
+24,Evelynn,
+25,Ezreal,
+26,Fiddlesticks,
+27,Fiora,
+28,Fizz,
+29,Galio,
+30,Gangplank,
+31,Garen,
+32,Gnar,
+33,Gragas,
+34,Graves,
+35,Hecarim,
+36,Heimerdinger,
+37,Illaoi,
+38,Irelia,
+39,Janna,
+40,Jarvan IV,
+41,Jax,
+42,Jayce,
+43,Jhin,
+44,Jinx,
+45,Kalista,
+46,Karma,
+47,Karthus,
+48,Kassadin,
+49,Katarina,
+50,Kayle,
+51,Kennen,
+52,Kha'Zix,
+53,Kindred,
+54,Kog'Maw,
+55,LeBlanc,
+56,Lee Sin,
+57,Leona,
+58,Lissandra,
+59,Lucian,
+60,Lulu,
+61,Lux,
+62,Maestro Yi,
+63,Malphite,
+64,Malzahar,
+65,Maokai,
+66,Miss Fortune,
+67,Mordekaiser,
+68,Morgana,
+69,Nami,
+70,Nasus,
+71,Nautilus,
+72,Nidalee,
+73,Nocturne,
+74,Nunu,
+75,Olaf,
+76,Orianna,
+77,Pantheon,
+78,Poppy,
+79,Quinn,
+80,Rammus,
+81,Rek'Sai,
+82,Renekton,
+83,Rengar,
+84,Riven,
+85,Rumble,
+86,Ryze,
+87,Sejuani,
+88,Shaco,
+89,Shen,
+90,Shyvana,
+91,Singed,
+92,Sion,
+93,Sivir,
+94,Skarner,
+95,Sona,
+96,Soraka,
+97,Swain,
+98,Syndra,
+99,Tahm Kench,
+100,Talon,
+101,Taric,
+102,Teemo,
+103,Thresh,
+104,Tristana,
+105,Trundle,
+106,Tryndamere,
+107,Twisted Fate,
+108,Twitch,
+109,Udyr,
+110,Urgot,
+111,Varus,
+112,Vayne,
+113,Veigar,
+114,Vel'Koz,
+115,Vi,
+116,Viktor,
+117,Vladimir,
+118,Volibear,
+119,Warwick,
+120,Wukong,
+121,Xerath,
+122,Xin Zhao,
+123,Yasuo,
+124,Yorick,
+125,Zac,
+126,Zed,
+127,Ziggs,
+128,Zilean,
+129,Zyra,
