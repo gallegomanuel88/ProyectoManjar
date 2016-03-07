@@ -19,7 +19,7 @@ public class Metodos {
     public String ruta = "/voces/";
 
     public int generarNumero() {
-        int numeroAleatorio = (int) (Math.random() * 128+1);
+        int numeroAleatorio = (int) (Math.random() * 129+1);
         return numeroAleatorio;
     }
 
