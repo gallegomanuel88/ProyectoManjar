@@ -80,7 +80,7 @@ public class Metodos {
     }
 
     /**
-     * Este metodo lee el archivo "jugadores.txt" y carga los los datos leidos en el arrayList "arrayJugadores" de clase <jugadores>.
+     * Este metodo lee el archivo "jugadores.txt" y carga los los datos leidos en el arrayList "arrayJugadores" de clase jugadores.
      */
     public void leerArchivoPuntuaciones() {
         
@@ -105,7 +105,7 @@ public class Metodos {
     }
     
     /**
-     * Este metodo ordena el arrayList "arrayJugadores" de clase <jugadores> cargado anteriormente por el metodo leerPuntuaciones ().
+     * Este metodo ordena el arrayList "arrayJugadores" de clase jugadores cargado anteriormente por el metodo leerPuntuaciones ().
      */
     public void ordenarArray (){
         //for(Jugadores j:arrayJugadores){
@@ -118,7 +118,7 @@ public class Metodos {
     }
     
     /**
-     * Este metodo sobreescribe los datos almacenados en el arrayList "arrayJugadores" de clase <jugadores>, en el archivo "jugadores.txt".
+     * Este metodo sobreescribe los datos almacenados en el arrayList "arrayJugadores" de clase jugadores, en el archivo "jugadores.txt".
      */
     public void escribirArchivoPuntuaciones (){
         File f;
@@ -139,7 +139,7 @@ public class Metodos {
     }
     
     /**
-     * Este metodo añade una puntuacion y jugador al arraylist "arrayJugadores" de clase <Jugadores>.
+     * Este metodo añade una puntuacion y jugador al arraylist "arrayJugadores" de clase Jugadores.
      */
     public void añadirPuntuacion (){
         objJugadores = new Jugadores (puntosActual,JOptionPane.showInputDialog("Escribe tu nombre de invocador"));

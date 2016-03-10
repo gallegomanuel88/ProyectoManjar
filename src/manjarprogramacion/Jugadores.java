@@ -9,7 +9,7 @@ package manjarprogramacion;
 public class Jugadores implements Comparable<Jugadores>{
     
     private int puntuacion;
-    private String jugador;
+    public String jugador;
 
     public Jugadores() {
     }
