@@ -1,5 +1,6 @@
 package manjarprogramacion;
 
+import JFrame.PanelCanciones;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -19,14 +20,14 @@ import javax.swing.JOptionPane;
  */
 public class Metodos {
 
-    public Clip clip;
+    public  static Clip clip;
     public String ruta = "/voces/";
-    public String campeonActual;
+    public static String campeonActual;
     public String jugadorActual;
     public int puntosActual;
     Jugadores objJugadores;
     ArrayList <Jugadores> arrayJugadores = new ArrayList();
-
+   
     /**
      * Genera un numero aleatorio entre el 1 y el 129.
      * @return retorna el numero aleatorio generado.
@@ -45,7 +46,7 @@ public class Metodos {
         File f;
         Scanner sc = null;
         try {
-            f = new File("src/manjarprogramacion/voces.txt");
+            f = new File("/home/oracle/NetBeansProjects/ProyectoManjar/voces.txt");
             sc = new Scanner(f);
 
             while (sc.hasNextLine()) {
@@ -54,12 +55,11 @@ public class Metodos {
                 String[] arrayNumeroYNombre = res.split(",");
                 if (Integer.parseInt(arrayNumeroYNombre[0]) == n) {
                     System.out.println(arrayNumeroYNombre[1]);
-                    sonido(arrayNumeroYNombre[1]);
                     campeonActual = arrayNumeroYNombre[1];
                 }
             }
         } catch (FileNotFoundException ex) {
-            System.out.println("Archivo no encontrado");
+            System.out.println("Archivo no encontrado"+ex.getMessage());
         } finally {
             sc.close();
         }
@@ -69,13 +69,17 @@ public class Metodos {
      * Con el String que recibe abre un archivo de sonido .wav con el mismo nombre que el contenido del String.
      * @param archivo "String archivo" va a recibir un String que correspondera con el nombre de uno de los archivos "campeon.wav".
      */
-    public void sonido(String archivo) {
-
+    public void sonido() {
+     PanelCanciones x = new PanelCanciones();
         try {
             clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta + archivo + ".wav")));
+            clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta + campeonActual + ".wav")));
             clip.start();
+            System.out.println(campeonActual);
         } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
+        }finally{
+            x.setVisible(true);
+            
         }
     }
 
@@ -94,6 +98,7 @@ public class Metodos {
                 String[] arrayPuntuacionYNombre = res.split(",");
                 objJugadores= new Jugadores(Integer.parseInt(arrayPuntuacionYNombre[0]),arrayPuntuacionYNombre[1]);
                 arrayJugadores.add(objJugadores);
+             
                 campeonActual=arrayPuntuacionYNombre[1];
             }
 
@@ -146,8 +151,8 @@ public class Metodos {
         arrayJugadores.add(objJugadores);
     }
     
-    public void comprobarCampeon (){
-        String campeon = JOptionPane.showInputDialog("Introduce el nombre del campeon:");
+    public void comprobarCampeon (String campeon){
+        
         if (campeon.equalsIgnoreCase(campeonActual)){
             JOptionPane.showMessageDialog(null, "Has acertado");
             puntosActual= (puntosActual+5);
@@ -159,7 +164,9 @@ public class Metodos {
             System.out.println(j.toString());
         }    
     }
-    public void jugar(){
+    
+   
+   /* public void jugar(){
         leerArchivoPuntuaciones();
         for (boolean b = false; b == false;) {
 
@@ -192,5 +199,5 @@ public class Metodos {
             }
 
         }
-    }
+    }*/
 }
