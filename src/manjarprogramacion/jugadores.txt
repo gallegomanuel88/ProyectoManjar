@@ -1,2 +1,5 @@
 500,Manu,
-20,Budispam,
+300,Budispam,
+100,commit8,
+50,pulpitoBurgues,
+5,Posmo,
