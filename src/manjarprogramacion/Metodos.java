@@ -138,6 +138,7 @@ public class Metodos {
         }
         finally {
             pr.close();
+            puntosActual = 0;
         }
     }
     
@@ -147,7 +148,6 @@ public class Metodos {
     public void añadirPuntuacion (String nombreInvocador){
         objJugadores = new Jugadores (puntosActual,nombreInvocador);
         arrayJugadores.add(objJugadores);
-        puntosActual = 0;
     }
     
     public void comprobarCampeon (String campeon){
