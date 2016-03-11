@@ -12,7 +12,6 @@ public class Manjarprogramacion {
         
         MenuPanel mp = new MenuPanel();
         mp.setVisible(true);
-        Metodos obx_metodos = new Metodos();
         
         
     }

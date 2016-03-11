@@ -20,11 +20,10 @@ import javax.swing.JOptionPane;
  */
 public class Metodos {
 
-    public  static Clip clip;
+    public static Clip clip;
     public String ruta = "/voces/";
     public static String campeonActual;
-    public String jugadorActual;
-    public int puntosActual;
+    public static int puntosActual;
     Jugadores objJugadores;
     ArrayList <Jugadores> arrayJugadores = new ArrayList();
    
@@ -46,7 +45,7 @@ public class Metodos {
         File f;
         Scanner sc = null;
         try {
-            f = new File("/home/oracle/NetBeansProjects/ProyectoManjar/voces.txt");
+            f = new File("src/manjarprogramacion/voces.txt");
             sc = new Scanner(f);
 
             while (sc.hasNextLine()) {
@@ -66,8 +65,7 @@ public class Metodos {
     }
 
     /**
-     * Con el String que recibe abre un archivo de sonido .wav con el mismo nombre que el contenido del String.
-     * @param archivo "String archivo" va a recibir un String que correspondera con el nombre de uno de los archivos "campeon.wav".
+     * Abre un archivo de sonido .wav con el mismo nombre que el contenido de campeon actual.
      */
     public void sonido() {
      PanelCanciones x = new PanelCanciones();
@@ -75,7 +73,7 @@ public class Metodos {
             clip = AudioSystem.getClip();
             clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta + campeonActual + ".wav")));
             clip.start();
-            System.out.println(campeonActual);
+            System.out.println("En sonido: "+campeonActual);
         } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
         }finally{
             x.setVisible(true);
@@ -146,9 +144,10 @@ public class Metodos {
     /**
      * Este metodo añade una puntuacion y jugador al arraylist "arrayJugadores" de clase Jugadores.
      */
-    public void añadirPuntuacion (){
-        objJugadores = new Jugadores (puntosActual,JOptionPane.showInputDialog("Escribe tu nombre de invocador"));
+    public void añadirPuntuacion (String nombreInvocador){
+        objJugadores = new Jugadores (puntosActual,nombreInvocador);
         arrayJugadores.add(objJugadores);
+        puntosActual = 0;
     }
     
     public void comprobarCampeon (String campeon){
@@ -158,6 +157,11 @@ public class Metodos {
             puntosActual= (puntosActual+5);
         } 
     }
+    
+    public String devolverPuntuacion (){
+        return String.valueOf(puntosActual);
+    }
+    
     //NO USAR ESTES METODOS EN JFRAME
     public void imprimir (){
         for(Jugadores j:arrayJugadores){

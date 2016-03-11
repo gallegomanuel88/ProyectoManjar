@@ -41,7 +41,7 @@ public class Jugadores implements Comparable<Jugadores>{
     }
     
     public String puntuacionNombre () {
-        return puntuacion+","+jugador;
+        return puntuacion+","+jugador+",";
     }
 
     @Override

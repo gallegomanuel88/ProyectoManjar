@@ -25,10 +25,9 @@ public class PanelCanciones extends javax.swing.JFrame {
     public PanelCanciones() {
         initComponents();
     }
-  static int contador = 0;
+   static int contador = 0;
    Metodos obx_metodos = new Metodos();
-   MenuPanel obx_menu = new MenuPanel();
-
+   IntroScore obx_score = new IntroScore();
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -89,19 +88,22 @@ public class PanelCanciones extends javax.swing.JFrame {
     
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
             //Variable donde se guarda el texto que introduces
-             String nombre;
-             nombre = jTextField1.getText();
-             //Comparación
+            String nombre;
+            nombre = jTextField1.getText();
+            //Comparación
              
-             obx_metodos.comprobarCampeon(nombre);
-             jTextField1.setText(null);
-             obx_metodos.leerArchivo(obx_metodos.generarNumero());
+            obx_metodos.comprobarCampeon(nombre);
+            jTextField1.setText(null);
+            obx_metodos.leerArchivo(obx_metodos.generarNumero());
              
-             contador(contador);
-             if(contador>4){
-                 setVisible(false);
-                 contador = 0;
-                 obx_menu.setVisible(true);
+            contador(contador);
+            if(contador>4){
+               setVisible(false);
+               
+               obx_score.setVisible(true);
+                
+               contador = 0;
+                
              }
                  
     }//GEN-LAST:event_jTextField1ActionPerformed

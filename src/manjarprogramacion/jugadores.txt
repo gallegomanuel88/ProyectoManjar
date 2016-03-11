@@ -1,4 +1,1 @@
-500,Manu
-15,Manu
-15,jano
-10,Javi
+500,Manu,
