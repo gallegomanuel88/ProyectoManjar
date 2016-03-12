@@ -93,6 +93,7 @@ public class IntroScore extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         String nombreInvocador;
         nombreInvocador = jTextField1.getText();
+        obx_metodos.sonidoMenu("buttom");
         obx_metodos.leerArchivoPuntuaciones();
         obx_metodos.añadirPuntuacion(nombreInvocador);
         obx_metodos.ordenarArray();

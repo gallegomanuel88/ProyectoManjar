@@ -80,6 +80,16 @@ public class Metodos {
             
         }
     }
+    
+    public void sonidoMenu(String sound) {
+        try {
+            clip = AudioSystem.getClip();
+            clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta + sound + ".wav")));
+            clip.start();
+        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
+        }finally{
+        }
+    }
 
     /**
      * Este metodo lee el archivo "jugadores.txt" y carga los los datos leidos en el arrayList "arrayJugadores" de clase jugadores.
@@ -111,13 +121,7 @@ public class Metodos {
      * Este metodo ordena el arrayList "arrayJugadores" de clase jugadores cargado anteriormente por el metodo leerPuntuaciones ().
      */
     public void ordenarArray (){
-        //for(Jugadores j:arrayJugadores){
-        //    System.out.println(j.toString());
-        //}
         Collections.sort(arrayJugadores);
-        //for(Jugadores j:arrayJugadores){
-        //   System.out.println(j.toString());
-        //}
     }
     
     /**
@@ -163,10 +167,11 @@ public class Metodos {
     }
     
     //NO USAR ESTES METODOS EN JFRAME
-    public void imprimir (){
-        for(Jugadores j:arrayJugadores){
-            System.out.println(j.toString());
-        }    
+    public String imprimir (int n){
+        //for(Jugadores j:arrayJugadores){
+        //    System.out.println(j.toString());
+        //}    
+        return arrayJugadores.get(n).toString();
     }
     
    

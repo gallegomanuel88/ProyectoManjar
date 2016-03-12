@@ -13,6 +13,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import manjarprogramacion.Metodos;
+
 /**
  *
  * @author oracle
@@ -25,9 +26,10 @@ public class PanelCanciones extends javax.swing.JFrame {
     public PanelCanciones() {
         initComponents();
     }
-   static int contador = 0;
-   Metodos obx_metodos = new Metodos();
-   IntroScore obx_score = new IntroScore();
+    static int contador = 0;
+    Metodos obx_metodos = new Metodos();
+    IntroScore obx_score = new IntroScore();
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -82,41 +84,40 @@ public class PanelCanciones extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-   
-    
 
-    
+
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-            //Variable donde se guarda el texto que introduces
-            String nombre;
-            nombre = jTextField1.getText();
-            //Comparación
-             
-            obx_metodos.comprobarCampeon(nombre);
-            jTextField1.setText(null);
-            obx_metodos.leerArchivo(obx_metodos.generarNumero());
-             
-            contador(contador);
-            if(contador>4){
-               setVisible(false);
-               
-               obx_score.setVisible(true);
-                
-               contador = 0;
-                
-             }
-                 
+        //Variable donde se guarda el texto que introduces
+        String nombre;
+        nombre = jTextField1.getText();
+        //Comparación
+
+        obx_metodos.comprobarCampeon(nombre);
+        jTextField1.setText(null);
+        obx_metodos.leerArchivo(obx_metodos.generarNumero());
+
+        contador(contador);
+        if (contador > 4) {
+            setVisible(false);
+
+            obx_score.setVisible(true);
+
+            contador = 0;
+
+        }
+
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-     obx_metodos.sonido();
-     setVisible(false);
+        obx_metodos.sonido();
+        setVisible(false);
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
-public void contador (int x){
-    if(contador<6)
-    contador++;
-}
+    public void contador(int x) {
+        if (contador < 6) {
+            contador++;
+        }
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;

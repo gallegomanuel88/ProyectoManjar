@@ -37,7 +37,7 @@ public class Jugadores implements Comparable<Jugadores>{
 
     @Override
     public String toString() {
-        return "Jugador: " + jugador + "  Puntuacion: " + puntuacion;
+        return "Invocador: " + jugador + "  Puntuacion: " + puntuacion;
     }
     
     public String puntuacionNombre () {

@@ -19,8 +19,6 @@ public class MenuPanel extends javax.swing.JFrame {
     public MenuPanel() {
         initComponents();
     }
-    Metodos obx_metodos = new Metodos();
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -98,8 +96,9 @@ public class MenuPanel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Metodos obx_metodos =new Metodos();
+        obx_metodos.sonidoMenu("button2");
         setVisible(false);
-        obx_metodos.leerArchivo(obx_metodos.generarNumero());
         PanelCanciones obx_panelCanciones = new PanelCanciones();
         obx_panelCanciones.setVisible(true);
        
@@ -111,8 +110,11 @@ public class MenuPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        
-        
+        Metodos obx_metodos =new Metodos();
+        obx_metodos.sonidoMenu("buttom");
+        setVisible(false);
+        PanelScores obx_panelScores = new PanelScores();
+        obx_panelScores.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
