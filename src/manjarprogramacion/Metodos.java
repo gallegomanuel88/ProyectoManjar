@@ -68,7 +68,6 @@ public class Metodos {
      * Abre un archivo de sonido .wav con el mismo nombre que el contenido de campeon actual.
      */
     public void sonido() {
-     PanelCanciones x = new PanelCanciones();
         try {
             clip = AudioSystem.getClip();
             clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta + campeonActual + ".wav")));
@@ -76,8 +75,6 @@ public class Metodos {
             System.out.println("En sonido: "+campeonActual);
         } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
         }finally{
-            x.setVisible(true);
-            
         }
     }
     

@@ -98,6 +98,7 @@ public class MenuPanel extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Metodos obx_metodos =new Metodos();
         obx_metodos.sonidoMenu("button2");
+        obx_metodos.leerArchivo(obx_metodos.generarNumero());
         setVisible(false);
         PanelCanciones obx_panelCanciones = new PanelCanciones();
         obx_panelCanciones.setVisible(true);
@@ -111,7 +112,7 @@ public class MenuPanel extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         Metodos obx_metodos =new Metodos();
-        obx_metodos.sonidoMenu("buttom");
+        obx_metodos.sonidoMenu("button");
         setVisible(false);
         PanelScores obx_panelScores = new PanelScores();
         obx_panelScores.setVisible(true);

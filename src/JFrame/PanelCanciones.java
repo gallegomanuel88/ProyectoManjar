@@ -91,7 +91,7 @@ public class PanelCanciones extends javax.swing.JFrame {
         String nombre;
         nombre = jTextField1.getText();
         //Comparación
-
+        obx_metodos.sonidoMenu("button");
         obx_metodos.comprobarCampeon(nombre);
         jTextField1.setText(null);
         obx_metodos.leerArchivo(obx_metodos.generarNumero());
@@ -109,8 +109,8 @@ public class PanelCanciones extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        obx_metodos.sonidoMenu("button");
         obx_metodos.sonido();
-        setVisible(false);
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     public void contador(int x) {
