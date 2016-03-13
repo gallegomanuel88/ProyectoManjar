@@ -145,7 +145,7 @@ public class Metodos {
     
     /**
      * Este metodo añade una puntuacion y jugador al arraylist "arrayJugadores" de clase Jugadores.
-     */
+     * @param nombreInvocador    */
     public void añadirPuntuacion (String nombreInvocador){
         objJugadores = new Jugadores (puntosActual,nombreInvocador);
         arrayJugadores.add(objJugadores);
