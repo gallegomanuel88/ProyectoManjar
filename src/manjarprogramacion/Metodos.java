@@ -154,7 +154,6 @@ public class Metodos {
     public void comprobarCampeon (String campeon){
         
         if (campeon.equalsIgnoreCase(campeonActual)){
-            JOptionPane.showMessageDialog(null, "Has acertado");
             puntosActual= (puntosActual+5);
         } 
     }

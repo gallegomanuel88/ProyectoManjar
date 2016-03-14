@@ -90,7 +90,7 @@ public class IntroScore extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(41, 41, 41))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(383, 536, Short.MAX_VALUE)
+                .addGap(394, 536, Short.MAX_VALUE)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22))
         );
@@ -113,8 +113,9 @@ public class IntroScore extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        String nombreInvocador;
+        String nombreInvocador; 
         nombreInvocador = jTextField1.getText();
+        if(nombreInvocador!=null){
         obx_metodos.sonidoMenu("button");
         obx_metodos.leerArchivoPuntuaciones();
         obx_metodos.añadirPuntuacion(nombreInvocador);
@@ -122,6 +123,7 @@ public class IntroScore extends javax.swing.JFrame {
         obx_metodos.escribirArchivoPuntuaciones();
         setVisible(false);
         obx_menu.setVisible(true);
+        }
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
