@@ -4,6 +4,7 @@
 400,xCatherinex,
 25,Bergondo2,
 25,ELMEJOR,
+10,juasjas,
 5,Posmo,
 5,pablo,
 0,Bergondo,
